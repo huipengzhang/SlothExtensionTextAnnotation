@@ -52,15 +52,20 @@ To edit an annotation
 5. To adjust the size of the box, push and drag using right button of mouse
 6. To only change the text, just simply click the left/right button
 
-Remember to click save button after edition!!!!
+Hotkeys
 ---
+* DigitText: **1**
+* Text: **2** 
+* HasText: **3**
+
+Remember to click save button after edition!!!!
 ---
 
 Details:
 ===
 Class: 
 ---
-* DigitText:
+* DigitText
 * Text
 * HasText (does not require a text annotation)
 
