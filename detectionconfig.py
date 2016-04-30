@@ -157,11 +157,11 @@ class textRectItem(BaseItem):
         if event.modifiers() & Qt.ShiftModifier:
             step = 5
         if event.key() == Qt.Key_Backslash:
-            self._model_item.update({self.prefix() + 'class':  unicode("3")})
-        if event.key() == Qt.Key_BracketRight:
             self._model_item.update({self.prefix() + 'class':  unicode("2")})
-        if event.key() == Qt.Key_BracketLeft:
+        if event.key() == Qt.Key_BracketRight:
             self._model_item.update({self.prefix() + 'class':  unicode("1")})
+        if event.key() == Qt.Key_BracketLeft:
+            self._model_item.update({self.prefix() + 'class':  unicode("0")})
             #self.popDialog()
             #self.updateModel()
             #event.accept()
@@ -184,7 +184,7 @@ class textRectItem(BaseItem):
 LABELS = (
     {
         'attributes': {
-            'class':      '1',
+            'class':      '0',
         },
         'inserter': RectItemInserter,
         'item':     textRectItem, 
@@ -193,7 +193,7 @@ LABELS = (
     },
     {
         'attributes': {
-            'class':      '2',
+            'class':      '1',
         },
         'inserter': RectItemInserter,
         'item':     textRectItem, 
@@ -201,7 +201,7 @@ LABELS = (
         'text':     'text',
     },{
         'attributes': {
-            'class':      '3',
+            'class':      '2',
         },
         'inserter': RectItemInserter,
         'item':     textRectItem,  
