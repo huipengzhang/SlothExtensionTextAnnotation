@@ -24,15 +24,16 @@ https://cvhci.anthropomatik.kit.edu/~baeuml/projects/a-universal-labeling-tool-f
 
 ---
 #Content Table
-**[Usage of sloth](#usage-of-sloth)**
-**[Naming criterion of files](#naming-criterion-of-files)**
-**[Usage of text detection config file](#usage-of-text-detection-config-file)**
-**[Usage of json to clipped images script](#usage-of-json-to-clipped-images-script)**
-**[Usage of text recognition config file](#usage-of-text-recognition-config-file)**
+
+1. **[Usage of sloth](#usage-of-sloth)**
+2. **[Naming criterion of files](#naming-criterion-of-files)**
+3. **[Usage of text detection config file](#usage-of-text-detection-config-file)**
+4. **[Usage of json to clipped images script](#usage-of-json-to-clipped-images-script)**
+5. **[Usage of text recognition config file](#usage-of-text-recognition-config-file)**
 
 #Important Sections
-**[Naming criterion of files](#naming-criterion-of-files)**
-**[Description for bounding boxes' class](#classes-and-hotkeyss)**
+1. **[Naming criterion of files](#naming-criterion-of-files)**
+2. **[Description for bounding boxes' class](#classes-and-hotkeys)**
 
 #Usage of sloth
 
@@ -51,22 +52,22 @@ E.g.
     sloth -c textAnnoConfig.py b.json
 
 #Naming criterion of files
-1. original frames:
+original frames:
 
     [path]/[any name e.g. youtube]\_[3digits-video-number]/[frame-number].png
 
-2. json files:
+json files:
 
     [path]/[any name e.g. youtube]\_[3digits-video-number].json
     
-3. lists[original image & json annotation]: 
+lists[original image & json annotation]: 
 
     [path]/[any name e.g. youtube]\_[3digits-video-number].list
     
-4. annotations[per frame] (add new key pairs { "imgname" , [bounding box]} for section 4 below): 
+annotations\[per frame\] \(add new key pairs { "imgname" , [bounding box]} for section 4 below): 
 
     [path]/[any name e.g. youtube]\_[3digits-video-number]/youtube\_[video-number]\_[frame-number].json
-5. images[per bounding box]: 
+images[per bounding box]: 
 
     [path]/[any name e.g. youtube]\_[3digits-video-number]/youtube\_[video-number]\_[frame-number]\_[annotation-number]\_[class].png
 
