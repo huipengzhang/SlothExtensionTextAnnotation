@@ -1,7 +1,7 @@
 # SlothExtensionTextAnnotation
-**Special configuration file for annotation tool SLOTH: https://github.com/cvhciKIT/sloth**
+**Special configuration file for annotation tool SLOTH**
 
-**TextRectItem:** Extented RectItem. 
+**SLOTH: https://github.com/cvhciKIT/sloth **
 
 1. detectionconfig.py -- Annotation Configuration for text detection
 2. textAnnoConfig.py  -- Annotation Configuration for text recognition
