@@ -84,7 +84,7 @@ images[per bounding box]:
 ---
 1. Choose a picture from “Annotations” section,
 2. Click one of Button in “Labels” section (or press a hotkey),
-3. Draw box and enter the text
+3. Draw box
 
 ###b.To edit an annotation
 
@@ -93,7 +93,7 @@ images[per bounding box]:
 3. If step b succeeded, the border of the annotation will became dash border
 4. `To move the box`, push and drag using left button of mice
 5. `To adjust the size of the box`, push and drag using right button of mice
-6. `To only change the class of text`, press the "change-class-hotkeys"
+6. `To only change the class of the bounding box`, press the "change-class-hotkeys"
 
 ###Classes and hotkeys
 | Classes | Hotkeys  | "Change-class" hotkeys | Description                                                                     |
@@ -136,7 +136,7 @@ images[per bounding box]:
     python divide.py help
 ### 
 ####divide frames of a video into bounding boxes
-####&divide json file of a video into json files of frames
+####&divide a json file of a video into json files of frames
     python divide.py [json file] [output json files path] [output bounding boxes' images' path]
 ####i.e.:
     python divide.py [path]/[any name e.g. youtube]_[3digits-video-number].json [path of output json files] [path of output bounding boxes images]
