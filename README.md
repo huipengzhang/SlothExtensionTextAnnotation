@@ -35,6 +35,7 @@ https://cvhci.anthropomatik.kit.edu/~baeuml/projects/a-universal-labeling-tool-f
 1. **[Naming criterion of files](#naming-criterion-of-files)**
 2. **[Description for bounding boxes' class](#classes-and-hotkeys)**
 3. **[Instructions for sloth GUI](http://sloth.readthedocs.org/en/latest/index.html)**
+
 ---
 #Usage of sloth
 
