@@ -16,7 +16,7 @@ https://cvhci.anthropomatik.kit.edu/~baeuml/projects/a-universal-labeling-tool-f
 
 **Document:** http://sloth.readthedocs.org/en/latest/index.html ***!Instructions for sloth GUI Here!***
 
-**Prerequisite:** python 2.7, Numpy
+**Prerequisite:** python 2.7, Numpy, openCV(for divide.py)
 
 **Packages:** python-qt4, python-numpy
     
@@ -34,7 +34,8 @@ https://cvhci.anthropomatik.kit.edu/~baeuml/projects/a-universal-labeling-tool-f
 #Important Sections
 1. **[Naming criterion of files](#naming-criterion-of-files)**
 2. **[Description for bounding boxes' class](#classes-and-hotkeys)**
-
+3. **[Instructions for sloth GUI](http://sloth.readthedocs.org/en/latest/index.html)**
+---
 #Usage of sloth
 
 a. Create an anotation file and add images
@@ -60,7 +61,7 @@ json files:
 
     [path]/[any name e.g. youtube]_[3digits-video-number].json
     
-lists[original image & json annotation]: 
+lists[original frame & json annotation]: 
 
     [path]/[any name e.g. youtube]_[3digits-video-number].list
     
@@ -105,7 +106,6 @@ images[per bounding box]:
 
 ###Output: json file
 
-###Format example: 
 ```json
 {
         "annotations": [
@@ -125,17 +125,59 @@ images[per bounding box]:
             }
         ],
         "class": "image",
-        "filename": "..example"
+        "filename": "[file path]"
     },
 ```
 #Usage of json to clipped images script
-### File name: 
-### Usage
-### output format
+### File name: divide.py
+### Usage:
+####get help
+    python divide.py help
+### 
+####divide frames of a video into bounding boxes
+####&divide json file of a video into json files of frames
+    python divide.py [json file] [output json files path] [output bounding boxes' images' path]
+####i.e.:
+    python divide.py [path]/[any name e.g. youtube]_[3digits-video-number].json [path of output json files] [path of output bounding boxes images]
+####Attention!!! use following command to make folders 
+####in [path of output json files] and [path of output bounding boxes images] at first
+    mkdir [any name e.g. youtube]_[3digits-video-number]
 
+### output format 
+####lists[original image & json annotation]: 
+    [path]/[any name e.g. youtube]_[3digits-video-number].list
+####annotations\[per frame\] \(add new key pairs { "imgname" , [bounding box]} for section 4 below): 
+    [path]/[any name e.g. youtube]_[3digits-video-number]/[any name e.g. youtube]_[video-number]_[frame-number].json
+####images[per bounding box]: 
+    [path]/[any name e.g. youtube]_[3digits-video-number]/[any name e.g. youtube]_[video-number]_[frame-number]_[annotation-number]_[class].png
+
+###e.g.
+####input:
+    python divide.py [pyth_A]/youtube_002.json video_annos/youtube_002/ video_boundingboxes
+####output:
+    [pyth_A]/youtube_002.list 
+    video_annos/youtube_002/youtube_002_[frame-number].json
+    video_boungdingboxes/youtube_002/youtube_002_[frame-number]_[annotation-number]_[class].png
+
+
+
+
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
 
 #Usage of text recognition config file
 
+###File name: textAnnoConfig.py
 To add an annotation
 ---
 1. Choose a picture from “Annotations” section,
