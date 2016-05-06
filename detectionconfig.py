@@ -156,11 +156,11 @@ class textRectItem(BaseItem):
         step = 1
         if event.modifiers() & Qt.ShiftModifier:
             step = 5
-        if event.key() == Qt.Key_Backslash:
+        if event.key() == Qt.Key_E:
             self._model_item.update({self.prefix() + 'class':  unicode("2")})
-        if event.key() == Qt.Key_BracketRight:
+        if event.key() == Qt.Key_W:
             self._model_item.update({self.prefix() + 'class':  unicode("1")})
-        if event.key() == Qt.Key_BracketLeft:
+        if event.key() == Qt.Key_Q:
             self._model_item.update({self.prefix() + 'class':  unicode("0")})
             #self.popDialog()
             #self.updateModel()
