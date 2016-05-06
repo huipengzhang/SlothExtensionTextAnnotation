@@ -140,21 +140,18 @@ images[per bounding box]:
     python divide.py [json file] [output json files path] [output bounding boxes' images' path]
 ####i.e.:
     python divide.py [path]/[any name e.g. youtube]_[3digits-video-number].json [path of output json files] [path of output bounding boxes images]
-####Attention!!! use following command to make folders 
-####in [path of output json files] and [path of output bounding boxes images] at first
-    mkdir [any name e.g. youtube]_[3digits-video-number]
 
 ### output format 
 ####lists[original image & json annotation]: 
     [path]/[any name e.g. youtube]_[3digits-video-number].list
 ####annotations\[per frame\] \(add new key pairs { "imgname" , [bounding box]} for section 4 below): 
-    [path]/[any name e.g. youtube]_[3digits-video-number]/[any name e.g. youtube]_[video-number]_[frame-number].json
+    [path]/[any name e.g. youtube]_[video-number]_[frame-number].json
 ####images[per bounding box]: 
-    [path]/[any name e.g. youtube]_[3digits-video-number]/[any name e.g. youtube]_[video-number]_[frame-number]_[annotation-number]_[class].png
+    [path]/[any name e.g. youtube]_[video-number]_[frame-number]_[annotation-number]_[class].png
 
 ###e.g.
 ####input:
-    python divide.py [pyth_A]/youtube_002.json video_annos video_boundingboxes
+    python divide.py [pyth_A]/youtube_002.json video_annos/youtube_002 video_boundingboxes/youtube_002
 ####output:
     [pyth_A]/youtube_002.list 
     video_annos/youtube_002/youtube_002_[frame-number].json
