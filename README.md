@@ -54,22 +54,23 @@ E.g.
 #Naming criterion of files
 original frames:
 
-    [path]/[any name e.g. youtube]\_[3digits-video-number]/[frame-number].png
+    [path]/[any name e.g. youtube]_[3digits-video-number]/[frame-number].png
 
 json files:
 
-    [path]/[any name e.g. youtube]\_[3digits-video-number].json
+    [path]/[any name e.g. youtube]_[3digits-video-number].json
     
 lists[original image & json annotation]: 
 
-    [path]/[any name e.g. youtube]\_[3digits-video-number].list
+    [path]/[any name e.g. youtube]_[3digits-video-number].list
     
 annotations\[per frame\] \(add new key pairs { "imgname" , [bounding box]} for section 4 below): 
 
-    [path]/[any name e.g. youtube]\_[3digits-video-number]/youtube\_[video-number]\_[frame-number].json
+    [path]/[any name e.g. youtube]_[3digits-video-number]/[any name e.g. youtube]_[video-number]_[frame-number].json
+
 images[per bounding box]: 
 
-    [path]/[any name e.g. youtube]\_[3digits-video-number]/youtube\_[video-number]\_[frame-number]\_[annotation-number]\_[class].png
+    [path]/[any name e.g. youtube]_[3digits-video-number]/[any name e.g. youtube]_[video-number]_[frame-number]_[annotation-number]_[class].png
 
 
 
