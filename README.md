@@ -154,7 +154,7 @@ images[per bounding box]:
 
 ###e.g.
 ####input:
-    python divide.py [pyth_A]/youtube_002.json video_annos/youtube_002/ video_boundingboxes
+    python divide.py [pyth_A]/youtube_002.json video_annos video_boundingboxes
 ####output:
     [pyth_A]/youtube_002.list 
     video_annos/youtube_002/youtube_002_[frame-number].json
